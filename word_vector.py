@@ -80,10 +80,7 @@ def calc_match(input_array, dictionary):
     for i in reversed(range(-20, 0)):
         key = list(sorted_dict.keys())[i]
         value = sorted_dict[key][0]
-
         print(f"│ {format(key,'.16f')}\t│\t{value}")
-
-    # return list(sorted_dict.values())[-2][0]
 
 
 def start():
@@ -109,6 +106,7 @@ def start():
 
         dictionary_check = []
 
+        # Checks if all words are in the dictionary
         for item in userInput:
             if item not in word_vectors and len(userInput) != 0:
                 dictionary_check.append(item)
